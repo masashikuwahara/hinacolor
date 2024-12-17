@@ -1,0 +1,121 @@
+<template>
+  <div>
+    <div>
+      <h3>色1を選択</h3>
+      <div class="colors">
+        <div
+          v-for="color in colors"
+          :key="color.name"
+          :style="{ backgroundColor: color.code }"
+          class="color-box"
+          :class="{ selected: selectedColor1 === color.name }"
+          @click="selectColor('color1', color.name)"
+        ></div>
+      </div>
+    </div>
+    <div>
+      <h3>色2を選択</h3>
+      <div class="colors">
+        <div
+          v-for="color in colors"
+          :key="color.name"
+          :style="{ backgroundColor: color.code }"
+          class="color-box"
+          :class="{ selected: selectedColor2 === color.name }"
+          @click="selectColor('color2', color.name)"
+        ></div>
+      </div>
+    </div>
+    <button @click="emitSelection" :disabled="!selectedColor1 || !selectedColor2">
+      検索
+    </button>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      colors: [
+        { name: 'パステルブルー', code: '#49BDF0' },
+        { name: 'エメラルドグリーン', code: '#00a968' },
+        { name: 'グリーン', code: '#00a960' },
+        { name: 'パールグリーン', code: '#98fb98' },
+        { name: 'ライトグリーン', code: '#90ee90' },
+        { name: 'イエロー', code: '#ffdc00' },
+        { name: 'オレンジ', code: '#ee7800' },
+        { name: 'レッド', code: '#ff0000' },
+        { name: 'ホワイト', code: '#ffffff' },
+        { name: 'サクラピンク', code: '#fceeeb' },
+        { name: 'ピンク', code: '#FFC0CB' },
+        { name: 'パッションピンク', code: '#fc0fc0' },
+        { name: 'バイオレット', code: '#5a4498' },
+        { name: 'パープル', code: '#9b72b0' },
+        { name: 'ブルー', code: '#0000ff' },
+      ],
+      selectedColor1: null,
+      selectedColor2: null,
+    };
+  },
+  methods: {
+    selectColor(target, colorName) {
+      if (target === 'color1') {
+        this.selectedColor1 = colorName;
+      } else if (target === 'color2') {
+        this.selectedColor2 = colorName;
+      }
+    },
+    emitSelection() {
+      this.$emit('selectCombination', [this.selectedColor1, this.selectedColor2]);
+    },
+  },
+};
+</script>
+
+<style>
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  padding-left: auto;
+}
+.color-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+}
+.color-box:hover {
+  transform: scale(1.1);
+  border: 2px solid #aaa;
+}
+.selected {
+  border: 3px solid #333;
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (min-width: 440px) {
+  #app {
+    margin-left: 33%;
+    margin-bottom: 20%;
+    padding: 10px;
+  }
+}
+</style>
