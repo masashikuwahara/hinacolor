@@ -22,8 +22,7 @@
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
     <script>
-    document.getElementById("ogImage").content =
-    "https://daytripper.site/img/hinacolor.jpg";
+      document.querySelector('meta[property="og:image"]').setAttribute("content", url);
     </script>
   </body>
 </html>
