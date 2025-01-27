@@ -20,6 +20,7 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2025.01.28', content: '卒業メンバーを削除しました'},
         { date: '2024.12.18', content: 'リリースしました'}
       ],
     }

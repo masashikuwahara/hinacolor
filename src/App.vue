@@ -22,17 +22,13 @@ export default {
     getCombinationResult(selectedColors) {
       const combination = selectedColors.sort().join('-');
       const combinations = {
-        'ブルー-ブルー': { name: '加藤史帆', img: 'https://cdn.hinatazaka46.com/images/14/610/d713c2e65eee8fa173ef6c62d0d49/800_800_102400.jpg' },
         'パステルブルー-パープル': { name: '佐々木久美', img: 'https://cdn.hinatazaka46.com/images/14/4f1/2d700f34ba47f7c556c4f9b0080b5/800_800_102400.jpg' },
         'イエロー-イエロー': { name: '佐々木美玲', img: 'https://cdn.hinatazaka46.com/images/14/0df/18fcfe112bdc514260a599f15ca6d/800_800_102400.jpg' },
         'ピンク-ホワイト': { name: '高瀬愛奈', img: 'https://cdn.hinatazaka46.com/images/14/ccb/7cc864c9f0c54e8d7cc27c88cd6a1/800_800_102400.jpg' },
-        'サクラピンク-サクラピンク': { name: '東村芽依', img: 'https://cdn.hinatazaka46.com/images/14/e8d/6d3443d32d21af5b4250cae4dfe98/800_800_102400.jpg' },
         'イエロー-パステルブルー': { name: '金村美玖', img: 'https://cdn.hinatazaka46.com/images/14/e3d/10e0ec44b93be391c4ab7f7e3cf0b/400_320_102400.jpg' },
         'イエロー-サクラピンク': { name: '河田陽菜', img: 'https://cdn.hinatazaka46.com/images/14/45b/c47ef916e2e0bf5e49a0144179153/400_320_102400.jpg' },
         'バイオレット-ホワイト': { name: '小坂菜緒', img: 'https://cdn.hinatazaka46.com/images/14/985/072c23fa8e0ac974f353d51d6d566/400_320_102400.jpg' },
         'パープル-パープル': { name: '富田鈴花', img: 'https://cdn.hinatazaka46.com/images/14/42f/2e3b0b500456d48a46514eceb343d/400_320_102400.jpg' },
-        'オレンジ-オレンジ': { name: '丹生明里', img: 'https://cdn.hinatazaka46.com/images/14/9bd/04f076fd4bb2a2133af488e5a4732/400_320_102400.jpg' },
-        'オレンジ-ホワイト': { name: '濱岸ひより', img: 'https://cdn.hinatazaka46.com/images/14/afc/00d2a3192ea32e11b16094ab3eff5/400_320_102400.jpg' },
         'サクラピンク-パールグリーン': { name: '松田好花', img: 'https://cdn.hinatazaka46.com/images/14/9c5/87d50e7853595aaefc3d14ab80749/400_320_102400.jpg' },
         'エメラルドグリーン-レッド': { name: '上村ひなの', img: 'https://cdn.hinatazaka46.com/images/14/9de/8d4bfed193adf56953f7aa3625760/400_320_102400.jpg' },
         'グリーン-パープル': { name: '髙橋未来虹', img: 'https://cdn.hinatazaka46.com/images/14/f8f/4112a6932e8751737def6f738abee/400_320_102400.jpg' },
