@@ -12,7 +12,7 @@
     ※ペンライトカラー及びメンバーは2025年1月現在の情報です
   </p>
   <br>
-  Ver.1.1.1
+  Ver.1.2.0
 </template>
 
 <script>
@@ -20,6 +20,7 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2025.03.13', content: '選択した色を表示する機能の追加'},
         { date: '2025.01.28', content: '卒業メンバーを削除しました'},
         { date: '2024.12.18', content: 'リリースしました'}
       ],
