@@ -91,8 +91,7 @@ export default {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
-  margin-left: 3%;
-  padding-left: auto;
+  justify-content: center;
 }
 .color-box {
   width: 50px;
