@@ -9,10 +9,14 @@
           :style="{ backgroundColor: color.code }"
           class="color-box"
           :class="{ selected: selectedColor1 === color.name }"
-          @click="selectColor('color1', color.name)"
+          @click="selectColor('color1', color.name, color.code)"
         ></div>
       </div>
+      <p class="selected-color-display" :style="{ backgroundColor: selectedColor1Code }">
+        選択された色1: {{ selectedColor1 || "未選択" }}
+      </p>
     </div>
+
     <div>
       <h3>色2を選択</h3>
       <div class="colors">
@@ -22,10 +26,14 @@
           :style="{ backgroundColor: color.code }"
           class="color-box"
           :class="{ selected: selectedColor2 === color.name }"
-          @click="selectColor('color2', color.name)"
+          @click="selectColor('color2', color.name, color.code)"
         ></div>
       </div>
+      <p class="selected-color-display" :style="{ backgroundColor: selectedColor2Code }">
+        選択された色2: {{ selectedColor2 || "未選択" }}
+      </p>
     </div>
+
     <button @click="emitSelection" :disabled="!selectedColor1 || !selectedColor2">
       検索
     </button>
@@ -37,40 +45,45 @@ export default {
   data() {
     return {
       colors: [
-        { name: 'パステルブルー', code: '#49BDF0' },
-        { name: 'エメラルドグリーン', code: '#00a968' },
-        { name: 'グリーン', code: '#00a960' },
-        { name: 'パールグリーン', code: '#98fb98' },
-        { name: 'ライトグリーン', code: '#90ee90' },
-        { name: 'イエロー', code: '#ffdc00' },
-        { name: 'オレンジ', code: '#ee7800' },
-        { name: 'レッド', code: '#ff0000' },
-        { name: 'ホワイト', code: '#ffffff' },
-        { name: 'サクラピンク', code: '#fceeeb' },
-        { name: 'ピンク', code: '#FFC0CB' },
-        { name: 'パッションピンク', code: '#fc0fc0' },
-        { name: 'バイオレット', code: '#5a4498' },
-        { name: 'パープル', code: '#9b72b0' },
-        { name: 'ブルー', code: '#0000ff' },
+        { name: "パステルブルー", code: "#49BDF0" },
+        { name: "エメラルドグリーン", code: "#00a968" },
+        { name: "グリーン", code: "#00a960" },
+        { name: "パールグリーン", code: "#98fb98" },
+        { name: "ライトグリーン", code: "#90ee90" },
+        { name: "イエロー", code: "#ffdc00" },
+        { name: "オレンジ", code: "#ee7800" },
+        { name: "レッド", code: "#ff0000" },
+        { name: "ホワイト", code: "#ffffff" },
+        { name: "サクラピンク", code: "#fceeeb" },
+        { name: "ピンク", code: "#FFC0CB" },
+        { name: "パッションピンク", code: "#fc0fc0" },
+        { name: "バイオレット", code: "#5a4498" },
+        { name: "パープル", code: "#9b72b0" },
+        { name: "ブルー", code: "#0000ff" },
       ],
       selectedColor1: null,
+      selectedColor1Code: "transparent",
       selectedColor2: null,
+      selectedColor2Code: "transparent",
     };
   },
   methods: {
-    selectColor(target, colorName) {
-      if (target === 'color1') {
-        this.selectedColor1 = colorName;
-      } else if (target === 'color2') {
-        this.selectedColor2 = colorName;
+    selectColor(target, colorName, colorCode) {
+      if (target === "color1") {
+        this.selectedColor1 = this.selectedColor1 === colorName ? null : colorName;
+        this.selectedColor1Code = this.selectedColor1 ? colorCode : "transparent";
+      } else if (target === "color2") {
+        this.selectedColor2 = this.selectedColor2 === colorName ? null : colorName;
+        this.selectedColor2Code = this.selectedColor2 ? colorCode : "transparent";
       }
     },
     emitSelection() {
-      this.$emit('selectCombination', [this.selectedColor1, this.selectedColor2]);
+      this.$emit("selectCombination", [this.selectedColor1, this.selectedColor2]);
     },
   },
 };
 </script>
+
 
 <style>
 .colors {
@@ -95,6 +108,15 @@ export default {
 }
 .selected {
   border: 3px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.selected-color-display {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #ccc;
 }
 button {
   margin-top: 10px;
