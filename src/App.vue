@@ -36,7 +36,7 @@ export default {
         'イエロー-パールグリーン': { name: '山口陽世', img: 'https://cdn.hinatazaka46.com/images/14/ebc/846dca80d22fbdb2dbf42f24ff5d9/400_320_102400.jpg' },
         'オレンジ-サクラピンク': { name: '石塚瑶季', img: 'https://cdn.hinatazaka46.com/images/14/b56/49ce8fef3670b03d97ed6b4212486/400_320_102400.jpg' },
         'パープル-ブルー': { name: '小西夏菜実', img: 'https://cdn.hinatazaka46.com/images/14/7af/4b0f4d4f5c906d391afea8edc8d25/400_320_102400.jpg' },
-        'オレンジ-パールグリーン': { name: '清水理央', img: 'https://cdn.hinatazaka46.com/images/14/b00/62d7047d19b84cc1b2922e011e2bf/400_320_102400.jpg' },
+        'パステルブルー-ピンク': { name: '清水理央', img: 'https://cdn.hinatazaka46.com/images/14/b00/62d7047d19b84cc1b2922e011e2bf/400_320_102400.jpg' },
         'オレンジ-レッド': { name: '正源司陽子', img: 'https://cdn.hinatazaka46.com/images/14/9b4/914eced5b352a11d009eafedfefbc/400_320_102400.jpg' },
         'イエロー-レッド': { name: '竹内希来里', img: 'https://cdn.hinatazaka46.com/images/14/66d/c4f27cba509510a6f48c23a9ece1c/400_320_102400.jpg' },
         'オレンジ-パステルブルー': { name: '平尾帆夏', img: 'https://cdn.hinatazaka46.com/images/14/1de/576523c0628298356025a2193ecb0/400_320_102400.jpg' },
@@ -44,7 +44,7 @@ export default {
         'サクラピンク-ブルー': { name: '藤嶌果歩', img: 'https://cdn.hinatazaka46.com/images/14/e39/7a5d6767ae33af1a7319529c461b5/400_320_102400.jpg' },
         'バイオレット-レッド': { name: '宮地すみれ', img: 'https://cdn.hinatazaka46.com/images/14/fa2/dbc520dc2a261472c591987a0a3ae/400_320_102400.jpg' },
         'エメラルドグリーン-ホワイト': { name: '山下葉留花', img: 'https://cdn.hinatazaka46.com/images/14/f25/16be8f588b8407199f992e5721915/400_320_102400.jpg' },
-        'パープル-ピンク': { name: '渡辺莉奈', img: 'https://cdn.hinatazaka46.com/images/14/249/c9216245dc6e1bb429ca60ef175bb/400_320_102400.jpg' }
+        'ブルー-ホワイト': { name: '渡辺莉奈', img: 'https://cdn.hinatazaka46.com/images/14/249/c9216245dc6e1bb429ca60ef175bb/400_320_102400.jpg' }
       };
       this.result = combinations[combination] || { name: '組み合わせ無し', img: 'https://cdn.hinatazaka46.com/images/14/cee/fdd9ce5600c3e28449d817494f466/200_200_102400.jpg' };
     }
