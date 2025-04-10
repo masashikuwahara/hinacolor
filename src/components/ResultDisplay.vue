@@ -20,9 +20,9 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2025.04.11', content: '佐々木久美、佐々木美玲を削除'},
         { date: '2025.04.08', content: '清水理央と渡辺莉奈のカラー変更'},
         { date: '2025.03.13', content: '選択した色を表示する機能の追加'},
-        { date: '2025.01.28', content: '卒業メンバーを削除しました'},
         { date: '2024.12.18', content: 'リリースしました'}
       ],
     }

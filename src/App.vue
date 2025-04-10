@@ -22,8 +22,6 @@ export default {
     getCombinationResult(selectedColors) {
       const combination = selectedColors.sort().join('-');
       const combinations = {
-        'パステルブルー-パープル': { name: '佐々木久美', img: 'https://cdn.hinatazaka46.com/images/14/4f1/2d700f34ba47f7c556c4f9b0080b5/800_800_102400.jpg' },
-        'イエロー-イエロー': { name: '佐々木美玲', img: 'https://cdn.hinatazaka46.com/images/14/0df/18fcfe112bdc514260a599f15ca6d/800_800_102400.jpg' },
         'ピンク-ホワイト': { name: '高瀬愛奈', img: 'https://cdn.hinatazaka46.com/images/14/ccb/7cc864c9f0c54e8d7cc27c88cd6a1/800_800_102400.jpg' },
         'イエロー-パステルブルー': { name: '金村美玖', img: 'https://cdn.hinatazaka46.com/images/14/e3d/10e0ec44b93be391c4ab7f7e3cf0b/400_320_102400.jpg' },
         'イエロー-サクラピンク': { name: '河田陽菜', img: 'https://cdn.hinatazaka46.com/images/14/45b/c47ef916e2e0bf5e49a0144179153/400_320_102400.jpg' },
