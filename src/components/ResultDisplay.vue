@@ -20,7 +20,7 @@ export default {
   data(){
     return {
       histories: [
-        { date: '2025.09.07', content: '富田鈴花を削除'},
+        { date: '2025.09.07', content: '富田鈴花を削除、メンバー画像を変更'},
         { date: '2025.05.09', content: 'メンバー画像を変更'},
         { date: '2025.05.09', content: '五期生を追加'},
         { date: '2025.05.09', content: '高瀬愛奈を削除'},
