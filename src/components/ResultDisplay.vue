@@ -9,7 +9,7 @@
     {{ history.date }} {{ history.content }}
   </div>
   <p class="description">
-    ※ペンライトカラー及びメンバーは2025年5月現在の情報です
+    ※ペンライトカラー及びメンバーは2025年9月現在の情報です
   </p>
   <br>
   Ver.1.2.2
