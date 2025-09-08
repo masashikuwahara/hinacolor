@@ -59,9 +59,14 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #7cc7e8;
+}
+
 .app {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",Meiryo,sans-serif;
   text-align: center;
-  color: #7cc7e8;
+  color: #fff;
 }
 </style>
