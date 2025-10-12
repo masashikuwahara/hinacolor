@@ -1,6 +1,6 @@
 {
   "name": "hinacolor",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,8 +13,8 @@
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.9",
     "vite-plugin-vue-devtools": "^7.6.5"
   }
 }
