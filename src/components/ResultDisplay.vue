@@ -12,7 +12,7 @@
     ※ペンライトカラー及びメンバーは2025年9月現在の情報です
   </p>
   <br>
-  Ver.2.0.0
+  {{ version }}
 </template>
 
 <script>
@@ -25,6 +25,7 @@ export default {
         { date: '2025.05.09', content: '五期生を追加'},
         { date: '2024.12.18', content: 'リリース'}
       ],
+      version: '2.0.1'
     }
   },
   props: {

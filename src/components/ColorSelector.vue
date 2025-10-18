@@ -115,7 +115,13 @@ export default {
   margin-top: 5px;
   border-radius: 5px;
   font-weight: bold;
+  color: white;
   border: 1px solid #ccc;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 }
 button {
   margin-top: 10px;
