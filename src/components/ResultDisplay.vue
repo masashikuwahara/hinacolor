@@ -20,6 +20,7 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2026.01.05', content: 'メンバー画像を変更しました'},
         { date: '2025.11.24', content: '河田陽菜を削除'},
         { date: '2025.09.07', content: '富田鈴花を削除、メンバー画像を変更'},
         { date: '2025.05.09', content: 'メンバー画像を変更'},
