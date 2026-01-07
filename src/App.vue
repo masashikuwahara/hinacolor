@@ -22,8 +22,8 @@ export default {
     getCombinationResult(selectedColors) {
       const combination = selectedColors.sort().join('-');
       const combinations = {
-        'イエロー-パステルブルー': { name: '金村美玖', img: 'https://cdn.hinatazaka46.com/images/14/e96/64a2bafa84fdd35dd0b436e535348/800_800_102400.jpg' },
-        'バイオレット-ホワイト': { name: '小坂菜緒', img: 'https://cdn.hinatazaka46.com/images/14/0f8/aa8dbc0edabe45368031be6c79492/800_800_102400.jpg' },
+        'イエロー-パステルブルー': { name: '金村美玖', img: 'https://cdn.hinatazaka46.com/images/14/0f8/aa8dbc0edabe45368031be6c79492/800_800_102400.jpg' },
+        'バイオレット-ホワイト': { name: '小坂菜緒', img: 'https://cdn.hinatazaka46.com/images/14/e96/64a2bafa84fdd35dd0b436e535348/800_800_102400.jpg' },
         'サクラピンク-パールグリーン': { name: '松田好花', img: 'https://cdn.hinatazaka46.com/images/14/797/97d4adf5917b888076c79a5b8e50e/800_800_102400.jpg' },
         'エメラルドグリーン-レッド': { name: '上村ひなの', img: 'https://cdn.hinatazaka46.com/images/14/d04/9a8fe13f4636d8ca094adb4f9726e/800_800_102400.jpg' },
         'グリーン-パープル': { name: '髙橋未来虹', img: 'https://cdn.hinatazaka46.com/images/14/d34/4927ef132fb234361a518f97e369d/800_800_102400.jpg' },
