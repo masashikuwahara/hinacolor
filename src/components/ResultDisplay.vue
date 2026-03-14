@@ -9,7 +9,7 @@
     {{ history.date }} {{ history.content }}
   </div>
   <p class="description">
-    ※ペンライトカラー及びメンバーは2025年11月現在の情報です
+    ※ペンライトカラー及びメンバーは2026年3月現在の情報です
   </p>
   <br>
   {{ version }}
@@ -20,6 +20,7 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2026.03.14', content: '松田好花を削除'},
         { date: '2026.01.05', content: 'メンバー画像を変更しました'},
         { date: '2025.11.24', content: '河田陽菜を削除'},
         { date: '2025.09.07', content: '富田鈴花を削除、メンバー画像を変更'},
